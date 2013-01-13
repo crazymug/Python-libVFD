@@ -46,7 +46,6 @@ class VFD:
         if self.port.isOpen():
             self.port.write('\x1F\x28\x66\x11\x08\x00\x01\x00\x01\xFD\xFF\xCD\xFA\xFA\xCD\xFF\xFD')
             time.sleep(1)
-            self.port.write('\n Privet German!')
         else:
             print "No initialized VFD found"
 
